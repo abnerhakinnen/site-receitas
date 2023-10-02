@@ -1,0 +1,21 @@
+.container {
+  background-color: #ffff;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  max-width: 100%;
+}
+.container-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  display: flex;
+  gap: 20px;
+}
+
+.inicio {
+  color: #fb8716;
+  font-weight: bold;
+}
+
