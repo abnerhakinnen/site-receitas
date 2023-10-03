@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../../componentes/Card/Card";
 
-export const SearchMeals = () => {
+export const SearchIngredients = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [recipes, setRecipes] = useState([]);
 
@@ -47,9 +47,9 @@ export const SearchMeals = () => {
         />
       </div>
 
-      <div className="flex flex-wrap justify-center p-8">
+      <div className="flex flex-wrap justify-center text-gray-600 p-8">
         {recipes.length === 0
-          ? <p className="text-gray-600">Receitas não encontradas</p>
+          ? "Receitas não encontradas"
           : recipes.map((meal) => (
               <Card
                 key={meal.idMeal}
