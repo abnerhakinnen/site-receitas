@@ -35,6 +35,7 @@ const IngredientRecipes = () => {
               strMeal={recipe.strMeal}
               strMealThumb={recipe.strMealThumb}
               strYoutube={recipe.strYoutube}
+              idMeal={recipe.idMeal}
             />
           </div>
         ))}
