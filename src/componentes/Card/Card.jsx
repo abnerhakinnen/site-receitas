@@ -22,6 +22,7 @@ const Card = ({ strMeal, strInstructions, strYoutube, strMealThumb, idMeal }) =>
 
           <a
             href={strYoutube}
+            target="_blank" 
             className="flex justify-center mt-auto m-2 bg-orange-500 text-white p-2 rounded-md border-solid border-2 border-orange-600 w-20 hover:bg-orange-600"
           >
             YouTube

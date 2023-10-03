@@ -87,24 +87,24 @@ export const SearchIngredients = () => {
         </div>
         <div className="grid grid-cols-2 grid-flow-row-dense gap-2">
           {filteredIngredients.map((ingredient) => (
-            <Link
-              to={`/ingredientes/${encodeURIComponent(
-                ingredient.strIngredient
-              )}`}
+            <div
               key={ingredient.strIngredient}
+              className={`block bg-white rounded p-3 mb-3 ${
+                selectedIngredients.includes(ingredient.strIngredient)
+                  ? "bg-blue-200 shadow"
+                  : "shadow"
+              }`}
             >
-              <div
-                className={`block bg-white rounded p-3 mb-3 ${
-                  selectedIngredients.includes(ingredient.strIngredient)
-                    ? "bg-blue-200 shadow"
-                    : "shadow"
-                }`}
+              <Link
+                to={`/ingredientes/${encodeURIComponent(
+                  ingredient.strIngredient
+                )}`}
               >
                 <h3 className="font-bold text-2xl">
                   {ingredient.strIngredient}
                 </h3>
-              </div>
-            </Link>
+              </Link>
+            </div>
           ))}
         </div>
       </div>

@@ -30,14 +30,17 @@ const IngredientRecipes = () => {
       <div className="px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {recipes.map((recipe) => (
           <div key={recipe.idMeal}>
-            <Card
-              key={recipe.idMeal}
-              strMeal={recipe.strMeal}
-              strMealThumb={recipe.strMealThumb}
-              strYoutube={recipe.strYoutube}
-              idMeal={recipe.idMeal}
-            />
+             <Card
+            key={recipe.idMeal}
+            strMeal={recipe.strMeal}
+            strInstructions={recipe.strInstructions}
+            strMealThumb={recipe.strMealThumb}
+            strYoutube={recipe.strYoutube}
+            idMeal={recipe.idMeal}
+          />
+          
           </div>
+          
         ))}
       </div>
     </div>
