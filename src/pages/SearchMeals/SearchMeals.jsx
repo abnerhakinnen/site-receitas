@@ -57,6 +57,7 @@ export const SearchMeals = () => {
                 strInstructions={meal.strInstructions}
                 strMealThumb={meal.strMealThumb}
                 strYoutube={meal.strYoutube}
+                idMeal={meal.idMeal}
               />
             ))}
       </div>

@@ -66,6 +66,7 @@ function SearchLetter() {
                 strInstructions={meal.strInstructions}
                 strMealThumb={meal.strMealThumb}
                 strYoutube={meal.strYoutube}
+                idMeal={meal.idMeal}
               />
             ))
           )}

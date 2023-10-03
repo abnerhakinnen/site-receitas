@@ -7,6 +7,7 @@
 .container-item {
   display: flex;
   justify-content: space-between;
+
 }
 
 .sidebar {
@@ -19,3 +20,16 @@
   font-weight: bold;
 }
 
+.link-button {
+  padding: 10px 20px; /* Ajuste o espaçamento conforme necessário */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.link-button:hover {
+  background-color: #ff6600; /* Laranja quando o mouse passar sobre o link */
+  color: white; /* Cor do texto quando o mouse passar sobre o link */
+}
