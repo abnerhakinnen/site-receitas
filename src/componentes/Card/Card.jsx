@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Card = ({ strMeal, strInstructions, strYoutube, strMealThumb, idMeal }) => {
   return (
-    <Link to={`/recipe/${idMeal}`} className="card-link">
-      <div className="flex flex-wrap justify-center items-center">
-        <section className="rounded-md shadow-md bg-white w-80 h-80 m-4 hover:scale-110 duration-300">
+    <div className="flex flex-wrap justify-center items-center">
+      <section className="rounded-md shadow-md bg-white w-80 h-80 m-4 hover:scale-110 duration-300">
+        <Link to={`/recipe/${idMeal}`} className="card-link">
           <img
             className="rounded-t-lg"
             src={strMealThumb}
@@ -19,17 +19,16 @@ const Card = ({ strMeal, strInstructions, strYoutube, strMealThumb, idMeal }) =>
               ? strInstructions.substring(0, 120) + "..."
               : strInstructions}
           </p>
-
-          <a
-            href={strYoutube}
-            target="_blank" 
-            className="flex justify-center mt-auto m-2 bg-orange-500 text-white p-2 rounded-md border-solid border-2 border-orange-600 w-20 hover:bg-orange-600"
-          >
-            YouTube
-          </a>
-        </section>
-      </div>
-    </Link>
+        </Link>
+        <a
+          href={strYoutube}
+          target="_blank" 
+          className="flex justify-center mt-auto m-2 bg-orange-500 text-white p-2 rounded-md border-solid border-2 border-orange-600 w-20 hover:bg-orange-600"
+        >
+          YouTube
+        </a>
+      </section>
+    </div>
   );
 };
 

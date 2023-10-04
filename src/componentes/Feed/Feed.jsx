@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Card from "../Card/Card"; 
-import './Feed.css'
+import Card from "../Card/Card";
+import "./Feed.css";
 
 const Feed = () => {
   const [meals, setMeals] = useState([]);
@@ -37,11 +37,13 @@ const Feed = () => {
   }, []);
 
   return (
-    <div>
-      <h1 className="flex justify-start text-orange-500 font-bold text-3xl px-40 m-2 ">
-        Receitas Aleatórias
-      </h1>
-      <div className="flex flex-wrap justify-center">
+    <div className="max-w-[1200px] mx-auto">
+      <div className="p-10 pb-0 text-orange-500">
+        <h1 className="text-4xl font-bold text-center ml-4 md:text-left">
+          Receitas Aleatórias
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-8">
         {meals.map((meal, index) => (
           <Card
             key={meal.idMeal}

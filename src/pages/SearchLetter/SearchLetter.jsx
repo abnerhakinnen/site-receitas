@@ -43,10 +43,10 @@ function SearchLetter() {
         <h1 className="text-4xl font-bold mb-4 text-orange-500">
           Receitas por Letra
         </h1>
-        <div className="flex gap-2 justify-center">
+        <div className="md:max-xl:flex flex items-center justify-center gap-2 ">
           {Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ").map((letra) => (
             <button
-              className="text-base hover:text-orange-500 hover:scale-150 transition-all"
+              className="lg:grid:grid-col-2 text-base hover:text-orange-500 hover:scale-150 transition-all"
               key={letra}
               onClick={() => handleLetterClick(letra)}
             >

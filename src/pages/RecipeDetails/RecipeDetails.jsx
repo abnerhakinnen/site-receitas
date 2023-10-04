@@ -64,7 +64,7 @@ const RecipeDetails = () => {
     <div className="flex flex-col max-w-[1200px] mx-auto">
       <div className="max-w-[800px] mx-auto p-8">
         <h1 className="text-4xl font-bold mb-5 text-orange-500">{strMeal}</h1>
-        <div className="flex flex-col items-center gap-10">
+        <div className="flex flex-col items-center gap-10 ">
           <img
             src={strMealThumb}
             alt={strMeal}
