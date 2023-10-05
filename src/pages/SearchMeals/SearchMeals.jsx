@@ -34,7 +34,7 @@ export const SearchMeals = () => {
     <div className="max-w-[1200px] mx-auto">
       <div className="p-8 pb-0">
         <h1 className="text-4xl font-bold mb-4 text-orange-500">
-          Search Meals by Name
+          Pesquisar receita por nome
         </h1>
       </div>
       <div className="px-8 pb-3">
