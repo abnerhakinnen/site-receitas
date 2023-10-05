@@ -43,10 +43,9 @@ function SearchLetter() {
         <h1 className="text-4xl font-bold mb-4 text-orange-500">
           Receitas por Letra
         </h1>
-        <div className="md:max-xl:flex flex items-center justify-center gap-2 ">
-          {Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ").map((letra) => (
+        <div className="sm:flex justify-between sm:max-w-xl mx-auto items-center my-auto text-center">          {Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ").map((letra) => (
             <button
-              className="lg:grid:grid-col-2 text-base hover:text-orange-500 hover:scale-150 transition-all"
+              className="text-base hover:text-orange-500 hover:scale-150 transition-all"
               key={letra}
               onClick={() => handleLetterClick(letra)}
             >
@@ -55,7 +54,7 @@ function SearchLetter() {
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center  p-8">
+        <div className="flex flex-wrap justify-center p-8">
           {recipes.length === 0 ? (
             <p className="text-gray-600">Receitas não encontradas</p>
           ) : (
